@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Smoke</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --smoke-gray: #4B4B4B;
+            --ember-orange: #E94E28;
+            --midnight-black: #000000;
+            --ash-white: #F7F7F7;
+            --gold-leaf: #D4AF37;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--ash-white);
+            color: var(--midnight-black);
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background: var(--midnight-black);
+            color: var(--ash-white);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .btn {
+            background: var(--ember-orange);
+            color: var(--ash-white);
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .hero {
+            background: url('images/hero.webp') center/cover no-repeat;
+            color: var(--ash-white);
+            text-align: center;
+            padding: 5rem 2rem;
+            position: relative;
+            height: 100vh; /* Makes the hero section full-screen height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .info-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+        }
+        .info-block {
+            background: var(--smoke-gray);
+            color: var(--ash-white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            width: 30%;
+        }
+        .footer {
+            background: var(--midnight-black);
+            color: var(--ash-white);
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">More Smoke</div>
+        <div class="nav-links">
+            <button class="btn">Login</button>
+            <button class="btn">Register</button>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1>More Smoke AI & Lounge</h1>
+            <p>Your Personal AI-Powered Cigar Concierge & Virtual Speakeasy</p>
+            <p>Experience expert cigar recommendations, perfect pairings, and a thriving smoke culture.</p>
+            <div class="subscription">
+                <input type="email" placeholder="Enter email for updates">
+                <button class="btn">Subscribe</button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Video Section -->
+    <section class="flex flex-col items-center text-center py-10 px-5">
+        <h2 class="text-3xl font-bold">See It In Action</h2>
+        <video width="640" height="360" controls>
+            <source src="videos/my-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    
+    <!-- Features -->
+    <section class="py-16 px-10 bg-gray-800 text-center">
+        <h2 class="text-3xl font-semibold">Key Features</h2>
+        <div class="grid md:grid-cols-3 gap-10 mt-10">
+            <div class="p-5 bg-gray-700 rounded-lg">
+                <h3 class="text-xl font-bold">AI-Powered Pairing</h3>
+                <p class="text-gray-400 mt-2">Personalized cigar and bourbon recommendations based on your taste.</p>
+            </div>
+            <div class="p-5 bg-gray-700 rounded-lg">
+                <h3 class="text-xl font-bold">Live Virtual Lounge</h3>
+                <p class="text-gray-400 mt-2">Join video and audio rooms to chat with fellow enthusiasts.</p>
+            </div>
+            <div class="p-5 bg-gray-700 rounded-lg">
+                <h3 class="text-xl font-bold">Exclusive Events</h3>
+                <p class="text-gray-400 mt-2">Participate in live tastings and expert-led discussions.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Follow Us</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/moresmokeco" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2025 More Smoke. All Rights Reserved.</p>
+        <p>#MoreSmoke | #ElevateTheSmoke

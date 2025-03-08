@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Smoke - User Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .checkbox-group {
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            display: block;
+            background: #ff4500;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">More Smoke</div>
+        <div class="nav-links">
+            <button class="btn">Login</button>
+            <button class="btn">Register</button>
+        </div>
+    </nav>
+    
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1>Create Your Profile</h1>
+            <p>Join the More Smoke community and personalize your experience.</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="profileName">Profile Name</label>
+                <input type="text" id="profileName" name="profileName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="profilePic">Upload Profile Picture</label>
+                <input type="file" id="profilePic" name="profilePic" accept="image/*">
+            </div>
+            
+            <div class="form-group">
+                <label for="socialMedia">Social Media Links</label>
+                <input type="url" id="socialMedia" name="socialMedia" placeholder="Instagram, Facebook, etc.">
+            </div>
+            
+            <div class="form-group">
+                <label>Select Your Interests</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="interest" value="cigar"> Cigar</label>
+                    <label><input type="checkbox" name="interest" value="bourbon"> Bourbon</label>
+                    <label><input type="checkbox" name="interest" value="both"> Both</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="about">Tell Us About Yourself</label>
+                <textarea id="about" name="about" rows="4" placeholder="Share something about yourself..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Create Profile</button>
+        </form>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2025 More Smoke. All Rights Reserved.</p>
+        <p>#MoreSmoke | #ElevateTheSmoke</p>
+    </footer>
+    
+</body>
+</html>
